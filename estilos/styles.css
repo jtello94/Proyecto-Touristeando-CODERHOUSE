@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* ------------------------ */
+/* GENERAL */
+/* ====================== */
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  box-sizing: border-box;
+}
+
+.body {
+  background-image: url("../img/imagen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+
+/* ---- HEADER ---- */
+
+header {
+  height: 15vh;
+}
+
+.navbar {
+  z-index: 100;
+}
+
+/* .navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+} */
+
+/* .menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+} */
+
+.menu li a {
+  text-decoration: none;
+  color: #243840;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-bottom: 1px solid transparent;
+  transition: all .5s ease;
+}
+
+.menu li:hover a {
+  color: #d95f5f;
+  border-bottom: 1px solid #f2f2f0;
+}
+
+
+/* ------------------------------------ */
+/* ----FOOTER---- */
+/* ------------------------------------ */
+
+footer {
+  height: 10vh;
+  padding-top: 1.5rem;
+  background-color: #f2f2f04f;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer>span {
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 5rem;
+  display: flex;
+}
+
+.imgTwitter {
+  width: 50px;
+  height: 50px;
+}
+
+/* ------------------------------------ */
+/* ----INDEX---- */
+/* ------------------------------------ */
+
+.mainIndex {
+  height: 75vh;
+  padding-top: 8rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.titleIndex {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #f2f2f0;
+  margin: 4rem 0rem 1rem 5rem;
+}
+
+.subtitleIndex {
+  font-weight: 500;
+  font-size: 5rem;
+  color: #f2f2f0;
+  margin: 1rem 0rem 1rem 4rem;
+  padding-left: 1rem;
+  line-height: 7rem;
+}
+
+.subtitle2 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #f2f2f0;
+  margin: 0rem 0rem 5rem 4rem;
+  padding-left: 1rem;
+}
+
+.toursButton {
+  text-decoration: none;
+  color: #f2f2f0;
+  margin-left: 5rem;
+  border: 2px solid #d95f5f;
+  background: #d95f5f;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+}
+
+.toursButton:hover {
+  color: #365359;
+}
+
+.carousel {
+  width: 50%;
+  margin-left: 10rem;
+  transition: 5s;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 75%;
+  margin-top: 4rem;
+}
+
+
+/* ------------------------------------ */
+/* ----TOURS---- */
+/* ------------------------------------ */
+
+.bodyTours {
+  background-image: url("../img/imagen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-areas: "nav"
+    "main"
+    "footer";
+}
+
+.navTours {
+  grid-area: nav;
+}
+
+.mainTours {
+  height: 70vh;
+  display: grid;
+  grid-template-areas: "titulo titulo titulo titulo"
+    "ciudades nieve mountain playa";
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: 10% auto;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  grid-column-gap: 5rem;
+  grid-area: main;
+}
+
+.mainTours img {
+  width: 30rem;
+  height: 40rem;
+  box-shadow: 5px 5px 20px 10px;
+  color: #243840;
+  margin-top: 5rem;
+}
+
+.titleTours {
+  grid-area: titulo;
+  margin-bottom: 10rem;
+  font-size: 3rem;
+  color: #f2f2f0;
+}
+
+.imagen1 {
+  grid-area: ciudades;
+  transition: 1s;
+}
+
+.imagen1:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.imagen2 {
+  grid-area: nieve;
+  transition: 1s;
+}
+
+.imagen2:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.imagen3 {
+  grid-area: mountain;
+  transition: 1s;
+}
+
+.imagen3:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.imagen4 {
+  grid-area: playa;
+  transition: 1s;
+}
+
+.imagen4:hover {
+  transform: scale(1.1, 1.1);
+}
+
+
+/* ------------------------------------ */
+/* ----NOSOTROS---- */
+/* ------------------------------------ */
+
+.mainUs {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.titleUs {
+  font-weight: 500;
+  font-size: 5rem;
+  color: white;
+}
+
+.subtitleUs {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #f2f2f0;
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+.mainUs__texto {
+  padding-left: 10rem;
+  margin-bottom: 5rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 200;
+  display: flex;
+  line-height: 2rem;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 20rem;
+}
+
+/* ---------------------------------- */
+/* ------ TOUR NIEVE-------- */
+/* ---------------------------------- */
+
+.bodyNieve {
+  background-image: url("../img/imagen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-areas: "nav"
+    "main"
+    "footer";
+}
+
+.navNieve {
+  grid-area: nav;
+}
+
+.mainNieve {
+  grid-area: main;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mainNieve__texto {
+  margin-bottom: 10rem;
+  width: 40%;
+  margin-top: 10rem;
+}
+
+.bodyText {
+  background-color: #f2f2f04b;
+}
+
+.bodyText ul {
+  padding-left: 3rem;
+  font-size: 1.3rem;
+  margin: 1rem 1rem 1rem 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.textNieve {
+  font-size: 1.3rem;
+  margin: 1rem 1rem 1rem 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.footerNieve {
+  grid-area: footer;
+}
+
+.titleNieve {
+  font-weight: 500;
+  font-size: 5rem;
+  color: white;
+}
+
+.subtitleNieve {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #f2f2f0;
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+.subtitleH3 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #f2f2f2;
+  background-color: #365359;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.subtitleH4 {
+  color: #f2f2f0;
+  font-size: 1.5rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.nieveAside {
+  width: 25vw;
+  margin-top: 3rem;
+}
+
+.nieveAside img {
+  object-fit: cover;
+  width: 70%;
+  height: 100%;
+  box-shadow: 2px 2px 20px 3px #f2f2f0;
+  margin-top: 2rem;
+}
+
+.vuelosButton {
+  text-decoration: none;
+  color: #f2f2f0;
+  border: 2px solid #d95f5f;
+  background: #d95f5f;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.5rem;
+  margin: 1rem 1rem 1rem 1rem;
+  line-height: 5rem;
+}
+
+/* ---------------------------------- */
+/* ------ CONTACTO-------- */
+/* ---------------------------------- */
+
+.mainContact {
+  height: 70vh;
+}
+
+form {
+  margin-top: 5rem;
+}
+
+.content {
+  width: 900px;
+  padding: 5rem;
+}
+
+.titleContact {
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: #f2f2f0;
+}
+
+.contactWrapper {
+  box-shadow: 0 0 20px 0 #f2f2f0;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.contactWrapper * {
+  padding: .5rem;
+}
+
+.contactForm {
+  background: #d9d8d765;
+}
+
+.contactForm form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.contactForm form .block {
+  grid-column: 1 / 3;
+}
+
+.contactForm form button,
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #d95f5f;
+  outline: none;
+  color: #365359;
+}
+
+.contactForm form button {
+  background: #d95f5f;
+  text-transform: uppercase;
+  color: #f2f2f0;
+  border: none;
+  width: 100%;
+}
+
+.contactForm form button:hover,
+.contactForm form button:focus {
+  background: #365359;
+  color: #f2f2f0;
+  transition: background-color 0.5s ease;
+  outline: 0;
+}
+
+.contactInfo {
+  background: rgb(67, 85, 95);
+  background: -moz-linear-gradient(159deg, rgba(67, 85, 95, 1) 37%, rgba(219, 218, 213, 1) 89%, rgba(169, 171, 167, 1) 100%);
+  background: -webkit-linear-gradient(159deg, rgba(67, 85, 95, 1) 37%, rgba(219, 218, 213, 1) 89%, rgba(169, 171, 167, 1) 100%);
+  background: linear-gradient(159deg, rgba(67, 85, 95, 1) 37%, rgba(219, 218, 213, 1) 89%, rgba(169, 171, 167, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43555f", endColorstr="#a9aba7", GradientType=1);
+}
+
+
+.contactInfo ul,
+.contactInfo h3,
+.contactInfo p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: #f2f2f0;
+  font-size: 1.5rem;
+}
+
+.contactInfo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contactInfo ul li {
+  padding: .3rem;
+}
+
+/* ---------------------------------------------------- */
+/* ---------ANIMISTA----------------------------------- */
+/* ---------------------------------------------------- */
+
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: tracking-in-expand 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 0rem;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #243840;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+    transition: all .5s ease;
+  }
+
+  .mainTours {
+    margin-top: 10rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainIndex {
+    height: 75vh;
+    padding-top: 0rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .carousel {
+    align-self: center;
+  }
+
+}

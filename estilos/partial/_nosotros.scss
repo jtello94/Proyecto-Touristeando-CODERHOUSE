@@ -1,0 +1,38 @@
+.mainUs {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+
+    &__texto {
+        padding-left: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    &__texto--title {
+        font-weight: 500;
+        font-size: 5rem;
+        color: white;
+    }
+
+    &__texto--subtitle {
+        font-weight: 400;
+        font-size: 2rem;
+        color: #f2f2f0;
+        margin: 2rem 0rem 2rem 0rem;
+    }
+
+    &__texto--txt {
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 200;
+        display: flex;
+        line-height: 2rem;
+    }
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 20rem;
+}

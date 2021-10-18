@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Touristeando, Tours, Vacaciones, Viajes, Vuelos, Mundo">
+  <meta name="description" content="Te gusta viajar? Planeá tu viaje perfecto con asesoramiento, tips para viajes,
+    informacion sobre destinos ideales para cada momento del año en Touristeando.">
+  <title>TOURISTEANDO | Planificá tu viaje</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="./estilos/styles.css" /> -->
+  <link rel="stylesheet" href="./estilos/main.css">
+</head>
+
+<body class="body">
+  <!--ENCABEZADO-->
+  <header class="body__header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light body__header--nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="body__header--navImg" src="./img/LOGO.png" alt="TouristeandoLogo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav align-items-center ">
+            <li class="nav-item body__header--navItemList">
+              <a class="nav-link active" aria-current="page" href="./secciones/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown body__header--navItemList">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Tours
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item body__navegacion--itemLink" href="./tours/playa.html">Playa</a></li>
+                <li><a class="dropdown-item body__navegacion--itemLink" href="./tours/nieve.html">Nieve</a></li>
+                <li><a class="dropdown-item body__navegacion--itemLink" href="./tours/mountain.html">Montaña</a></li>
+                <li><a class="dropdown-item body__navegacion--itemLink" href="#">Ciudades</a></li>
+              </ul>
+            </li>
+            <li class="nav-item body__header--navItemList">
+              <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--CUERPO-->
+
+  <main class="mainIndex">
+    <div>
+      <h1 class="mainIndex__title tracking-in-expand">BIENVENIDO</h1>
+      <h2 class="mainIndex__subtitle tracking-in-expand">Explorá el mundo y <br>sus diferentes lugares</h2>
+      <h3 class="mainIndex__subtitle2 tracking-in-expand">Elegí el tour que más se adapte a vos</h3>
+      <a href="./secciones/tours.html" class="mainIndex__btn tracking-in-expand">VER TOURS</a>
+    </div>
+
+    <!-- ----SLIDER---- -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/fondo-nieve.jpg" class="d-block carousel-item__img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/esquiador.jpg" class="d-block carousel-item__img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/mountain2.jpg" class="d-block carousel-item__img" alt="...">
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--PIE DE PAGINA-->
+  <footer class="footer">
+    <span class="footer__txt">Encontranos en nuestras redes sociales</span>
+    <div>
+      <img class="footer__img" src="./img/—Pngtree—twitter white icon_3570409.png" alt="twitterIcon">
+      <img class="footer__img" src="./img/—Pngtree—facebook white icon_3570425.png" alt="facebookIcon">
+    </div>
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+.mainPlaya {
+    .row {
+        height: auto;
+    }
+}
+
+.playa__titles {
+    &--h1 {
+        font-weight: 500;
+        font-size: 5rem;
+        color: white;
+        padding-left: 2rem;
+        margin: 2rem 0 0 0;
+    }
+
+    &--h2 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #f2f2f0;
+        margin: 2rem 0rem 2rem 0rem;
+        padding-left: 2rem;
+    }
+}
+
+.playa__text {
+    font-size: 1.3rem;
+    margin: 2rem 0rem 2rem 0rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding-left: 2rem;
+
+    &--h3 {
+        font-weight: 400;
+        font-size: 2rem;
+        color: #f2f2f2;
+        background-color: #365359;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    &--h4 {
+        color: #f2f2f0;
+        font-size: 1.5rem;
+    }
+
+    &--p {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        color: #f2f2f0;
+    }
+}
+
+.playa__img {
+    width: 40%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+.vuelos__btn {
+    text-decoration: none;
+    color: #f2f2f0;
+    border: 2px solid #d95f5f;
+    background: #d95f5f;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.5rem;
+    margin: 1rem 1rem 1rem 1rem;
+    line-height: 5rem;
+}
+
+.info__link {
+    background-color: #f2f2f0;
+    margin: 2rem 0rem;
+    padding: 0.5rem 0.5rem;
+    width: 75%;
+
+
+    & a:hover {
+        color: #d95f5f;
+    }
+}

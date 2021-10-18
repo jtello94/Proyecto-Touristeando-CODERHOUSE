@@ -1,0 +1,124 @@
+@import "./media-queries";
+
+.mainIndex {
+    height: 75vh;
+    padding-top: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+
+    @include tablet {
+        flex-flow: wrap;
+
+        .carousel {
+            width: 50%;
+
+            &-item__img {
+                object-fit: contain;
+            }
+        }
+    }
+
+    @include phone {
+        flex-flow: wrap;
+        padding-top: 0;
+
+        .carousel {
+            width: 50%;
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 2rem;
+        color: #f2f2f0;
+        margin: 4rem 0rem 1rem 5rem;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 5rem;
+        color: #f2f2f0;
+        margin: 1rem 0rem 1rem 4rem;
+        padding-left: 1rem;
+        line-height: 7rem;
+    }
+
+    &__subtitle2 {
+        font-weight: 400;
+        font-size: 2rem;
+        color: #f2f2f0;
+        margin: 0rem 0rem 5rem 4rem;
+        padding-left: 1rem;
+    }
+
+    &__btn {
+        text-decoration: none;
+        color: #f2f2f0;
+        margin-left: 5rem;
+        border: 2px solid #d95f5f;
+        background: #d95f5f;
+        padding: 1rem 2rem 1rem 2rem;
+        font-size: 1.5rem;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+
+        &:hover {
+            color: #365359;
+        }
+    }
+}
+
+.carousel {
+    width: 50%;
+    margin-left: 10rem;
+    -webkit-transition: 5s;
+    transition: 5s;
+}
+
+.carousel-item__img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 75%;
+    margin-top: 4rem;
+}
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    animation: tracking-in-expand 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*# sourceMappingURL=main.css.map */
