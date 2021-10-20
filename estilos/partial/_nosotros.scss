@@ -5,7 +5,7 @@
 
     &__texto {
         padding-left: 10rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 
     &__texto--title {
@@ -18,7 +18,7 @@
         font-weight: 400;
         font-size: 2rem;
         color: #f2f2f0;
-        margin: 2rem 0rem 2rem 0rem;
+        margin: 1rem 0rem 2rem 0rem;
     }
 
     &__texto--txt {
@@ -27,6 +27,7 @@
         font-weight: 200;
         display: flex;
         line-height: 2rem;
+        padding-top: 1.5rem;
     }
 }
 
@@ -34,5 +35,48 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-left: 20rem;
+}
+
+@include laptop {
+
+    .mainUs__texto {
+        padding-left: 9rem;
+    }
+
+    .mainUs__texto {
+        margin: 1rem 2rem 2rem 2rem;
+    }
+
+    .mainUs__texto--title {
+        padding-left: 19rem;
+    }
+
+    .mainUs__texto--subtitle {
+        padding-left: 15rem;
+        margin: 1rem 0rem 2rem 0rem;
+    }
+
+    .mainUs__texto--txt {
+        padding-left: 1rem;
+    }
+}
+
+@include tablet {
+
+    .mainUs__texto {
+        padding-left: 4rem;
+    }
+
+    .mainUs__texto--title {
+        padding-left: 11rem;
+    }
+
+    .mainUs__texto--subtitle {
+        padding-left: 7.5rem;
+    }
+
+    .mainUs__texto--txt {
+        padding-left: 1.5rem;
+        padding-top: 0rem;
+    }
 }
