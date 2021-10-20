@@ -12,12 +12,16 @@
 
     @include tablet {
         flex-flow: wrap;
+        padding-top: 1rem;
+        height: auto;
 
         .carousel {
-            width: 50%;
+            width: 80%;
+            margin-bottom: 5rem;
 
             &-item__img {
                 object-fit: contain;
+                margin: 3rem 3rem 5rem 3rem;
             }
         }
     }
@@ -29,6 +33,32 @@
         .carousel {
             width: 50%;
         }
+    }
+
+    @include laptop {
+        flex-flow: wrap;
+        padding-top: 0rem;
+        height: auto;
+
+        .mainIndex__title {
+            margin: 2rem 0rem 1rem 5rem;
+        }
+
+        .carousel {
+            width: 65%;
+            margin-bottom: 2rem;
+
+            &-item__img {
+                object-fit: contain;
+                margin: 3rem 3rem 1rem 3rem;
+            }
+        }
+
+        .mainIndex__btn {
+            margin: 25rem;
+        }
+
+
     }
 
     &__title {

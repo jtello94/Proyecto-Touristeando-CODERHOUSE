@@ -98,13 +98,17 @@ html {
   .mainIndex {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
+    padding-top: 1rem;
+    height: auto;
   }
   .mainIndex .carousel {
-    width: 50%;
+    width: 80%;
+    margin-bottom: 5rem;
   }
   .mainIndex .carousel-item__img {
     -o-object-fit: contain;
        object-fit: contain;
+    margin: 3rem 3rem 5rem 3rem;
   }
 }
 
@@ -116,6 +120,30 @@ html {
   }
   .mainIndex .carousel {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mainIndex {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    padding-top: 0rem;
+    height: auto;
+  }
+  .mainIndex .mainIndex__title {
+    margin: 2rem 0rem 1rem 5rem;
+  }
+  .mainIndex .carousel {
+    width: 65%;
+    margin-bottom: 2rem;
+  }
+  .mainIndex .carousel-item__img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 3rem 3rem 1rem 3rem;
+  }
+  .mainIndex .mainIndex__btn {
+    margin: 25rem;
   }
 }
 
@@ -242,6 +270,39 @@ html {
   padding-top: 1.5rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .mainUs .mainUs__texto {
+    padding-left: 9rem;
+    margin: 1rem 2rem 2rem 2rem;
+  }
+  .mainUs .mainUs__texto--title {
+    padding-left: 19rem;
+  }
+  .mainUs .mainUs__texto--subtitle {
+    padding-left: 15rem;
+    margin: 1rem 0rem 2rem 0rem;
+  }
+  .mainUs .mainUs__texto--txt {
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainUs .mainUs__texto {
+    padding-left: 4rem;
+  }
+  .mainUs .mainUs__texto--title {
+    padding-left: 11rem;
+  }
+  .mainUs .mainUs__texto--subtitle {
+    padding-left: 7.5rem;
+  }
+  .mainUs .mainUs__texto--txt {
+    padding-left: 1.5rem;
+    padding-top: 0rem;
+  }
+}
+
 .video {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,41 +312,6 @@ html {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-}
-
-@media screen and (max-width: 1024px) {
-  .mainUs__texto {
-    padding-left: 9rem;
-  }
-  .mainUs__texto {
-    margin: 1rem 2rem 2rem 2rem;
-  }
-  .mainUs__texto--title {
-    padding-left: 19rem;
-  }
-  .mainUs__texto--subtitle {
-    padding-left: 15rem;
-    margin: 1rem 0rem 2rem 0rem;
-  }
-  .mainUs__texto--txt {
-    padding-left: 1rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .mainUs__texto {
-    padding-left: 4rem;
-  }
-  .mainUs__texto--title {
-    padding-left: 11rem;
-  }
-  .mainUs__texto--subtitle {
-    padding-left: 7.5rem;
-  }
-  .mainUs__texto--txt {
-    padding-left: 1.5rem;
-    padding-top: 0rem;
-  }
 }
 
 .nieve__titles {
