@@ -21,7 +21,7 @@ html {
 }
 
 .body__header {
-  height: 15vh;
+  height: 8vh;
 }
 
 .body__header--navImg {
@@ -84,7 +84,7 @@ html {
 }
 
 .mainIndex {
-  height: 75vh;
+  height: 82vh;
   padding-top: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,7 +232,7 @@ html {
   }
 }
 .mainUs {
-  height: 75vh;
+  height: 82vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,6 +314,99 @@ html {
       align-content: center;
 }
 
+.main__size {
+  height: 82vh;
+}
+
+.content {
+  max-width: 60vw;
+  padding: 1.5em;
+}
+
+.content__title {
+  font-size: 4rem;
+  color: #f2f2f0;
+}
+
+.content__logo {
+  text-align: center;
+  font-size: 3em;
+}
+
+.content__contact-wrapper {
+  -webkit-box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+.content__contact-form {
+  background: #d9d8d765;
+}
+
+.content__contact-form--form-text {
+  margin: 0;
+  padding: 1em;
+  color: #f2f2f0;
+}
+
+.content__contact-form--form button,
+.content__contact-form--form input,
+.content__contact-form--form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #d95f5f;
+  outline: none;
+  color: #f2f2f0;
+}
+
+.content__contact-form--form button {
+  background: #d95f5f;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  margin-top: .5em;
+}
+
+.content__contact-form--form button:hover {
+  background: #365359;
+  -webkit-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+  outline: 0;
+}
+
+.content__contact-info {
+  background: #43555f;
+  background: linear-gradient(159deg, #43555f 37%, #dbdad5 89%, #a9aba7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43555f", endColorstr="#a9aba7", GradientType=1);
+  color: #f2f2f0;
+}
+
+.content__contact-info h3,
+.content__contact-info ul,
+.content__contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.content__contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content__contact-info ul,
+.content__contact-info li {
+  padding: .3em;
+}
+
+.mainNieve {
+  padding: 5rem 0;
+}
+
+.mainNieve .row {
+  height: 100%;
+}
+
 .nieve__titles {
   padding-left: 3rem;
 }
@@ -369,8 +462,12 @@ html {
   color: #f2f2f0;
 }
 
+.mainPlaya {
+  padding: 5rem 0;
+}
+
 .mainPlaya .row {
-  height: auto;
+  height: 100%;
 }
 
 .playa__titles--h1 {

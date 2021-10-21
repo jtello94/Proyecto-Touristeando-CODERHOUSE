@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords"
+        content=" Contactate, Información turistica, Tourismo, noticias de viaje, Recorridos, Destinos">
+    <meta name="description"
+        content="Contactate con nosotros. Nos encantaria saber de vos! Contactate y recibí información detallada sobre diferentes tours para tus vacaciones soñadas!">
+    <title>Contacto | Touristeando</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../estilos/main.css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/0220b47808.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+    <!-- ENCABEZADO DE LA PAGINA -->
+    <header class="body__header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/LOGO.png" alt="TouristeandoLogo" height="35%" width="35%">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item body__header--navItemList">
+                            <a class="nav-link active" aria-current="page"
+                                href="../secciones/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown body__header--navItemList">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tours
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item body__navegacion--itemLink"
+                                        href="../tours/playa.html">Playa</a></li>
+                                <li><a class="dropdown-item body__navegacion--itemLink"
+                                        href="../tours/nieve.html">Nieve</a></li>
+                                <li><a class="dropdown-item body__navegacion--itemLink"
+                                        href="../tours/mountain.html">Montaña</a></li>
+                                <li><a class="dropdown-item body__navegacion--itemLink" href="#">Ciudades</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item body__header--navItemList">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <main class="main__size">
+        <div class="content container-fluid">
+
+            <h1 class="content content__logo col-12 content__title tracking-in-expand">Contactate con Nosotros</h1>
+
+            <div class="content content__contact-wrapper">
+                <div class="row">
+                    <div class="content content__contact-form col-lg-8 col-md-12">
+                        <h2>Formulario</h2>
+                        <form class="content__contact-form--form" action="">
+                            <p class="content__contact-form--form-text">
+                                <label for="datosPersona">Nombre Completo</label>
+                                <input type="text" name="datosPersona">
+                            </p>
+                            <p class="content__contact-form--form-text">
+                                <label for="mailPersona"> Ingresa tu E-mail</label>
+                                <input type="email" name="mailPersona">
+                            </p>
+                            <p class="content__contact-form--form-text">
+                                <label for="seleccionTour">Seleccioná el Tour</label>
+                                <select name="seleccionTour" id="seleccionTour">
+                                    <option value="montaña">Montaña</option>
+                                    <option value="montaña">Playa</option>
+                                    <option value="montaña">Nieve</option>
+                                    <option value="montaña">Ciudades</option>
+                                </select>
+                            </p>
+                            <p class="content__contact-form--form-text content__contact-form--form-block">
+                                <label for="infoEspecifica">Dejanos tu comentario</label>
+                                <textarea name="infoEspecifica" id="infoEspecifica" cols="5" rows="5"></textarea>
+                            </p>
+                            <p class="content__contact-form--form-text">
+                                <label for="aceptaNewsletter">Deseo suscribirme al Newsletter</label>
+                                <input type="checkbox" name="aceptaNewsletter" value="1" />
+                            </p>
+                            <p class="content__contact-form--form-text content__contact-form--form-block">
+                                <button type="reset">Resetear Campos</button>
+                            </p>
+                            <p class="content__contact-form--form-text content__contact-form--form-block">
+                                <button type="submit">Enviar</button>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content content__contact-info col-lg-4 col-md-12">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</li>
+                            <li><i class="fas fa-envelope-open-text"></i> contacto@touristeando.com</li>
+                            <li><i class="fas fa-phone"></i> +549 011 5678 8945</li>
+                        </ul>
+                        <p>
+                            Rellena el formulario a continuacion para recibir mas informacion sobre el tour deseado
+                        </p>
+                        <p>Touristeando.com</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!--PIE DE PAGINA-->
+    <footer class="footer">
+        <span class="footer__txt">Encontranos en nuestras redes sociales</span>
+        <div>
+            <img class="footer__img" src="../img/—Pngtree—twitter white icon_3570409.png" alt="twitterIcon">
+            <img class="footer__img" src="../img/—Pngtree—facebook white icon_3570425.png" alt="facebookIcon">
+        </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
+
+
+</body>
+
+
+
+</html>

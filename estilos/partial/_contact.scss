@@ -1,0 +1,87 @@
+.main__size {
+    height: 82vh;
+}
+
+.content {
+    max-width: 60vw;
+    padding: 1.5em;
+
+    &__title {
+        font-size: 4rem;
+        color: #f2f2f0;
+    }
+
+    &__logo {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    &__contact-wrapper {
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    }
+
+    &__contact-form {
+        background: #d9d8d765;
+
+        &--form {
+            &-text {
+                margin: 0;
+                padding: 1em;
+                color: #f2f2f0;
+            }
+
+            & button,
+            input,
+            textarea {
+                width: 100%;
+                padding: .7em;
+                border: none;
+                background: none;
+                border-bottom: 1px solid #d95f5f;
+                outline: none;
+                color: #f2f2f0;
+            }
+
+            & button {
+                background: #d95f5f;
+                border: 0;
+                text-transform: uppercase;
+                padding: 1em;
+                margin-top: .5em;
+
+                &:hover {
+                    background: #365359;
+                    transition: background-color .5s ease-out;
+                    outline: 0;
+                }
+            }
+        }
+    }
+
+    &__contact-info {
+        background: rgb(67, 85, 95);
+        background: -moz-linear-gradient(159deg, rgba(67, 85, 95, 1) 37%, rgba(219, 218, 213, 1) 89%, rgba(169, 171, 167, 1) 100%);
+        background: -webkit-linear-gradient(159deg, rgba(67, 85, 95, 1) 37%, rgba(219, 218, 213, 1) 89%, rgba(169, 171, 167, 1) 100%);
+        background: linear-gradient(159deg, rgba(67, 85, 95, 1) 37%, rgba(219, 218, 213, 1) 89%, rgba(169, 171, 167, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43555f", endColorstr="#a9aba7", GradientType=1);
+        color: #f2f2f0;
+
+        & h3,
+        ul,
+        p {
+            text-align: center;
+            margin: 0 0 1rem 0;
+        }
+
+        & ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        & ul,
+        li {
+            padding: .3em;
+        }
+    }
+
+}
