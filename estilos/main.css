@@ -58,31 +58,6 @@ html {
   z-index: 100;
 }
 
-.body__error {
-  background-image: url(../img/error-404.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.botonHome {
-  text-decoration: none;
-  color: #f2f2f0;
-  border: 2px solid #d95f5f;
-  background: #d95f5f;
-  padding: 1rem 2rem 1rem 2rem;
-  font-size: 1.5rem;
-  margin: 1rem 1rem 1rem 1rem;
-  line-height: 5rem;
-}
-
-.error404 {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
 .mainIndex {
   height: 82vh;
   padding-top: 8rem;
@@ -399,6 +374,48 @@ html {
   padding: .3em;
 }
 
+.mainTours {
+  height: 82vh;
+}
+
+@media screen and (max-width: 1199px) {
+  .mainTours {
+    height: 100%;
+    padding-bottom: 5rem;
+  }
+}
+
+.mainTours div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainTours__title {
+  font-size: 5rem;
+  color: #f2f2f0;
+  margin-top: 13rem;
+}
+
+.mainTours img {
+  width: 30rem;
+  height: 40rem;
+  -webkit-box-shadow: 5px 5px 20px 10px;
+          box-shadow: 5px 5px 20px 10px;
+  color: #243840;
+  margin-top: 5rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.mainTours img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
 .mainNieve {
   padding: 5rem 0;
 }
@@ -515,9 +532,7 @@ html {
 }
 
 .playa__img {
-  width: 40%;
-  height: auto;
-  margin: 2rem 0;
+  width: 30%;
 }
 
 .vuelos__btn {
@@ -535,7 +550,7 @@ html {
   background-color: #f2f2f0;
   margin: 2rem 0rem;
   padding: 0.5rem 0.5rem;
-  width: 75%;
+  width: 65%;
 }
 
 .info__link a:hover {

@@ -1,0 +1,35 @@
+@import "./media-queries";
+
+.mainTours {
+    height: 82vh;
+
+    @include laptopXL {
+        height: 100%;
+        padding-bottom: 5rem;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 5rem;
+        color: #f2f2f0;
+        margin-top: 13rem;
+    }
+
+    img {
+        width: 30rem;
+        height: 40rem;
+        box-shadow: 5px 5px 20px 10px;
+        color: #243840;
+        margin-top: 5rem;
+        transition: 1s;
+
+    }
+
+    img:hover {
+        transform: scale(1.1, 1.1);
+    }
+}

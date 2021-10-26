@@ -5,16 +5,241 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tours de Montaña | Touristeando </title>
+    <meta name="keywords" content="Montaña, Caminatas, Paisajes, Vacaciones, Turismo, Trekking, Vuelos">
+    <meta name="description"
+        content="Si lo tuyo es la actividad al aire libre, caminatas, la montaña, entonces ha venido al lugar correcto. ¡Hemos recopilado una lista de nuestros destinos favoritos!">
+    <title>Tours de Montaña | Touristeando</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- MI CSS -->
+    <!-- <link rel="stylesheet" href="../estilos/styles.css" /> -->
     <link rel="stylesheet" href="../estilos/main.css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/0220b47808.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="body__error">
-    <header></header>
-    <main class="error404">
-        <a class="botonHome" href="../index.html"> Volver a Home</a>
+<body class="body">
+    <!--ENCABEZADO-->
+    <header class="body__header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light body__header--nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="body__header--navImg" src="../img/LOGO.png" alt="TouristeandoLogo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-center ">
+                        <li class="nav-item body__header--navItemList">
+                            <a class="nav-link active" aria-current="page"
+                                href="../secciones/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown body__header--navItemList">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tours
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item body__navegacion--itemLink" href="./playa.html">Playa</a>
+                                </li>
+                                <li><a class="dropdown-item body__navegacion--itemLink" href="nieve.html">Nieve</a>
+                                </li>
+                                <li><a class="dropdown-item body__navegacion--itemLink" href="#">Montaña</a>
+                                </li>
+                                <li><a class="dropdown-item body__navegacion--itemLink" href="#">Ciudades</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item body__header--navItemList">
+                            <a class="nav-link" href="../secciones/contact-form.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- CUERPO DE LA PAGINA -->
+    <main class="mainPlaya">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
+                    <div class="playa__titles">
+                        <h1 class="playa__titles playa__titles--h1">Vacaciones en la montaña: destinos que no puedes
+                            perderte</h1>
+                        <h2 class="playa__titles playa__titles--h2">¿Te apetecería irte de vacaciones a la montaña este
+                            verano? Descubre en este artículo los 5 destinos que no te puedes perder y las
+                            actividades únicas que puedes hacer en ellos.
+                        </h2>
+                    </div>
+                    <div class="playa__text">
+                        <h3 class="playa__text playa__text--h3"><i class="fas fa-map-marker-alt"></i> Región de
+                            Kandersteg, Cantón de Berna. Suiza</h3>
+                        <p class="playa__text playa__text--p">
+                            Kandersteg es un pueblo pequeño que se encuentra a 1 hora en coche de Berna. Una vez que
+                            llegas allí, tienes que ir al lago de Oeschinen, uno de los lagos más bonitos de Suiza. En
+                            este precioso lugar encontrarás muchos senderos para hacer excursiones y correr, todo un
+                            descubrimiento para los amantes del trekking. El camino para llegar al lago te regalará unos
+                            paisajes preciosos con cascadas, praderas verdes, vacas pastando y bosques. Al llegar a la
+                            parte alta, podrás admirar un espectáculo que no te decepcionará... Las aguas turquesa del
+                            lago rodeado de montañas te dejarán boquiabierto/a. Los que no son tan amigos del deporte
+                            también pueden llegar en teleférico.
+                        </p>
+                        <h4 class="playa__text playa__text--h4">¿Qué actividades puedo realizar?</h4>
+                        <p class="playa__text playa__text--p">
+                            Si te gustan las emociones fuertes, puedes probar el tubing. Acércate a la Swisscom Nordic
+                            Arena, donde podrás bajar a toda velocidad por una pista de esquí con trampolín a 90km/h en
+                            un lugar excepcional.
+                        </p>
+                        <h4 class="playa__text playa__text--h4">¿Como llegar?</h4>
+                        <p class="playa__text playa__text--p">
+                            Recomendamos volar al aeropuerto de Zurich (ZRH) que está a 125.5 km de Kandersteg. El tren
+                            de Zurich (ZRH) a Kandersteg tarda 2h 46m.
+                        </p>
+                        <div>
+                            <a href="https://www.despegar.com.ar/vuelos/BUE/ZRH?from=SB&di=1-0" class="vuelos__btn"> VER
+                                VUELOS
+                            </a>
+                        </div>
+                    </div>
+                    <div class="playa__text">
+                        <h3 class="playa__text playa__text--h3"><i class="fas fa-map-marker-alt"></i> Los Dolomitas,
+                            Italia</h3>
+                        <p class="playa__text playa__text--p">
+                            Los Dolomitas, cadena montañosa situada al nordeste de Italia, es una región que no puedes
+                            perderte si te gustan las vacaciones de montaña, tanto en invierno como en verano. Este
+                            paisaje ha sido considerado por muchos uno de los paisajes más bonitos del mundo. Sus
+                            montañas son el paraíso de esquiadores, excursionistas y amantes de la naturaleza. En esta
+                            cadena montañosa encontrarás lagos de un azul de cuento, praderas, bosques de coníferas y
+                            pequeñas cabañas de madera perdidas en medio de la nada. Si te aventuras a conocerlas, no te
+                            pierdas las tres cimas y sus emblemáticos picos en forma de aguja.
+                        </p>
+                        <h4 class="playa__text playa__text--h4">¿Qué actividades puedo realizar?</h4>
+                        <p class="playa__text playa__text--p">
+                            En la estación de teleférico de Croda Rossa, podrás unirte a un equipo que te llevará a la
+                            granja del pueblo de Warf, donde podrás alimentar a un rebaño de renos y aprender un poco
+                            más sobre esta especie de ciervo.
+                        </p>
+                        <h4 class="playa__text playa__text--h4">¿Cómo llegar a Los Dolomitas?</h4>
+                        <p class="playa__text playa__text--p">
+                            Existen varias maneras de llegar a este hermoso lugar turístico, aquí te dejamos un enlace
+                            para que puedas ver las diferentes opciones:
+                        </p>
+                        <div class="info__link">
+                            <a href="https://www.lonelyplanet.es/europa/italia/dolomitas/transporte">Explora las
+                                diferentes formas de
+                                llegar a Los Dolomitas, Italia.
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.despegar.com.ar/vuelos/BUE/MIL?from=SB&di=1-0" class="vuelos__btn"> VER
+                                VUELOS
+                            </a>
+                        </div>
+                    </div>
+                    <div class="playa__text">
+                        <h3 class="playa__text playa__text--h3"><i class="fas fa-map-marker-alt"></i> Gavarnie, Francia
+                        </h3>
+                        <p class="playa__text playa__text--p">
+                            En el macizo de los Pirineos, Gavarnie es un destino ideal para el verano. Para acceder al
+                            circo de Gavarnie y a su espléndida cascada, no te olvides de llevarte unos buenos zapatos
+                            para caminar. Tanto si la disfrutas con niños como con amigos, esta excursión de una belleza
+                            inmensurable te dejará sin aliento.
+                        </p>
+                        <h4 class="playa__text playa__text--h4">¿Qué actividades puedo realizar?</h4>
+                        <p class="playa__text playa__text--p">
+                            a unos 40 minutos del circo de Gavarnie, puedes hacer tirolina, rodeado de acantilados,
+                            aguas turquesas y cascadas en un recorrido de 16 tirolinas en un entorno excepcional que te
+                            hará vivir una aventura única y llena de emociones fuertes.
+                        </p>
+                        <h4 class="playa__text playa__text--h4">¿Cómo llegar a Gavarnie?</h4>
+                        <p class="playa__text playa__text--p">
+                            Si quieres llegar en avión, lo más fácil es ir hasta el aeropuerto de Toulouse y allí
+                            alquilar un coche, ya que la mejor forma de llegar hasta Gavarnie es con coche.
+
+                            La ruta parte desde el pueblo de Gavarnie, que es un pequeño pueblo muy cercano a la
+                            frontera
+                            con España, y prácticamente adosado a los cañones españoles de Añisclo, Pineta y Ordesa.
+                            Pero como la carretera francesa acaba en Gavarnie y no tiene continuidad en territorio
+                            español, no es tan fácil llegar hasta allí.
+
+                            Gavarnie era una pequeña y aislada aldea de pastores de ovejas, hasta que en el año 1864
+                            llegó la carretera de acceso y entonces se convirtió en la cuna de la romántica actividad
+                            pirineísta, tanto es así que hoy muchos le denominan el Chamonix de los Pirineos.
+                        </p>
+                        <div>
+                            <a href="https://www.despegar.com.ar/vuelos/BUE/TLS?from=SB&di=1-0" class="vuelos__btn"> VER
+                                VUELOS
+                            </a>
+                        </div>
+                    </div>
+                    <div class="playa__text">
+                        <h3 class="playa__text playa__text--h3"><i class="fas fa-map-marker-alt"></i> Meteora, Grecia
+                        </h3>
+                        <p class="playa__text playa__text--p">
+                            Los monasterios de Meteora se encuentran suspendidos en la cumbre de unos imponentes
+                            acantilados en el norte de Grecia y hay que visitarlos al menos una vez en la vida. De los
+                            veinte monasterios construidos, hoy en día sólo seis están activos y se pueden visitar.
+                            Podrás subir a pie asciendo por las escaleras talladas en la roca y, al llegar a la cima,
+                            contemplarás un espléndido paisaje con unas espectaculares vistas sobre el valle y el resto
+                            de los monasterios.
+                            <br>
+                            <br>
+                            Meteora significa "rocas en el aire", una expresión que define perfectamente lo que
+                            encontraremos allí. Meteora es un conjunto de peñascos de piedra arenisca formados bajo el
+                            mar hace 30 millones de años. Estas fascinantes formaciones esculpidas a lo largo de la
+                            historia quedaron al descubierto al bajar el nivel del mar.
+                        </p>
+                        <h4 class="playa__text playa__text--h4">¿Cómo llegar a Meteora?</h4>
+                        <p class="playa__text playa__text--p">
+                            Podemos encontrar diversas maneras de llegar, pero primero lo primero y es viajar desde
+                            cualquier parte del mundo en la que uno este hacia Atenas.
+                            Una vez llegados, en el siguiente enlace te dejamos las distintas formas de llegar a este
+                            hermoso lugar, como tambien donde hospedarte y las actividades a realizar.
+                        </p>
+                        <div class="info__link">
+                            <a href="https://www.atenas.net/meteora">Ingresa aquí para ver las diferentes formas de
+                                llegar a Meteora.
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.despegar.com.ar/vuelos/BUE/ATH?from=SB&di=1-0" class="vuelos__btn"> VER
+                                VUELOS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 d-flex flex-column align-items-center ">
+                    <img class="playa__img" src="../img/gavarnie.jpg" alt="montaña-gavarnie">
+                    <img class="playa__img" src="../img/meteora.jpg" alt="meteora-monasterio">
+                    <img class="playa__img" src="../img/gavarnie2.jpg" alt="gavarnie-cascada">
+                </div>
+
+            </div>
+
+        </div>
+
     </main>
-    <footer></footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
 </body>
+
+<!--PIE DE PAGINA-->
+<footer class="footer">
+    <span class="footer__txt">Encontranos en nuestras redes sociales</span>
+    <div>
+        <img class="footer__img" src="../img/—Pngtree—twitter white icon_3570409.png" alt="twitterIcon">
+        <img class="footer__img" src="../img/—Pngtree—facebook white icon_3570425.png" alt="facebookIcon">
+    </div>
+</footer>
 
 </html>
